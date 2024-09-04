@@ -10,7 +10,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 function App() {
   return (
     <div className="App">
-      <ToastContainer position="bottom-right" autoClose={1000} />
+      <ToastContainer position="bottom-right" autoClose={2000} />
       <Header />
       <Routes>
         <Route element={<ProtectedRoute />}>
