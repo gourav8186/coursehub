@@ -94,7 +94,7 @@ header {
         border: 1px solid var(--color-secondary) !important;
         padding: 6px 4px !important;
         transition: 0.4s !important;
-        appearance: none;
+        background-color: transparent !important;
       }
     }
 
@@ -474,6 +474,25 @@ header {
     .rightBox {
       width: 100% !important;
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .dashboard {
+    .headerTop {
+      display: flex;
+      justify-content: space-between;
+    }
+    h1 {
+      font-size: 20px !important;
+    }
+    h5 {
+      font-size: 14px;
+    }
+  }
+  .enrlBtn {
+    padding: 5px 10px !important;
+    font-size: 12px;
   }
 }
 

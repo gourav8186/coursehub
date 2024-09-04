@@ -26,7 +26,7 @@ const Dashboard = () => {
         <div className="enrolButton">
           <Link to="/">
             <button type="button" className="enrlBtn">
-              Enroll More Course
+              New Course
             </button>
           </Link>
         </div>
