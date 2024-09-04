@@ -89,11 +89,11 @@ header {
 
       .optionBox {
         width: 100% !important;
-        outline: none;
-        border-radius: 5px;
-        border: 1px solid var(--color-secondary);
-        padding: 6px 4px;
-        transition: 0.4s;
+        outline: none !important;
+        border-radius: 5px !important;
+        border: 1px solid var(--color-secondary) !important;
+        padding: 6px 4px !important;
+        transition: 0.4s !important;
       }
     }
 
