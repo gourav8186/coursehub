@@ -10,7 +10,7 @@ const Filters = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     axios
-      .get("https://mocki.io/v1/511cd2ce-a07e-498a-a333-e1bb052d9cbd")
+      .get("https://mocki.io/v1/0f57f5d5-9a70-4fdf-af23-159eae2d2d05")
       .then((response) => {
         dispatch(setCourses(response.data.courses));
       })
@@ -32,13 +32,13 @@ const Filters = () => {
       <h4>Filter</h4>
       <div className="filters">
         <div className="category">
-          <span>Category By</span>
+          {/* <span>Category By</span> */}
           <select
             name="category"
             onChange={handleFilterChange}
             className="optionBox"
           >
-            <option value="">All</option>
+            <option value="">Categories</option>
             {course.map((item, index) => (
               <option key={index} value={item.category}>
                 {item.category}

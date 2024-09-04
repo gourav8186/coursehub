@@ -38,6 +38,7 @@ const LoginPopup = ({ onClose }) => {
 
     dispatch(login({ token, user }));
     onClose();
+    window.location.reload();
     toast.success("Logged in successfully!");
   };
 

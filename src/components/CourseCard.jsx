@@ -34,7 +34,7 @@ const CourseCard = () => {
           filteredCourses.map((course) => (
             <div
               key={course.id}
-              className="col-6 col-sm-4 col-md-6 col-lg-4 col-xl-3"
+              className="col-xs-6 col-sm-4 col-md-6 col-lg-4 col-xl-3"
             >
               <Link to={`/course/${course.id}`}>
                 <div className="card">
