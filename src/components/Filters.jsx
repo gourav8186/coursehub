@@ -32,7 +32,6 @@ const Filters = () => {
       <h4>Filter</h4>
       <div className="filters">
         <div className="category">
-          {/* <span>Category By</span> */}
           <select
             name="category"
             onChange={handleFilterChange}
