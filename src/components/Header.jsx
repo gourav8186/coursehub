@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import LoginPopup from "./LogIn";
 import { logout } from "../store/authSlice";
 import { useSelector, useDispatch } from "react-redux";
@@ -10,12 +10,24 @@ import { toast } from "react-toastify";
 const Header = () => {
   const [isShow, setIsShow] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
+  const menuBtnRef = useRef();
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
   const dispatch = useDispatch();
 
   const toggleMenu = () => {
     setIsShow(!isShow);
   };
+  const handleDocumentClick = (event) => {
+    if (menuBtnRef.current && !menuBtnRef.current.contains(event.target)) {
+      setIsShow(isShow);
+    }
+  };
+  useEffect(() => {
+    document.addEventListener("mousedown", handleDocumentClick);
+    return () => {
+      document.removeEventListener("mousedown", handleDocumentClick);
+    };
+  }, []);
 
   const handleLogout = () => {
     localStorage.removeItem("authToken");
@@ -35,7 +47,10 @@ const Header = () => {
         <div onClick={toggleMenu} className="mobileToggle">
           {isShow ? <IoCloseOutline /> : <RxHamburgerMenu />}
         </div>
-        <ul className={`linkBox ${isShow ? "toggleMenu" : ""}`}>
+        <ul
+          className={`linkBox ${isShow ? "toggleMenu" : ""}`}
+          ref={menuBtnRef}
+        >
           <li>{isAuthenticated && <Link to="/">Home</Link>}</li>
           <li>{isAuthenticated && <Link to="/dashboard">Dashboard</Link>} </li>
 
