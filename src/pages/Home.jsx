@@ -12,7 +12,6 @@ const Home = () => {
     axios
       .get("https://mocki.io/v1/0f57f5d5-9a70-4fdf-af23-159eae2d2d05")
       .then((response) => {
-        console.log(response.data.courses);
         dispatch(setCourses(response.data.courses));
       });
   }, [dispatch]);
