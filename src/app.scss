@@ -167,6 +167,10 @@ header {
       span {
         font-size: 14px;
       }
+
+      .likeBtn {
+        z-index: 99 !important;
+      }
     }
   }
 }

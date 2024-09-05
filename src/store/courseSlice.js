@@ -77,6 +77,6 @@ const coursesSlice = createSlice({
     },
 });
 
-export const { setCourses, enrollCourse, markCourseCompleted, loadEnrolledCourses, setEnrolledCourses, setFilter, setSearchQuery } = coursesSlice.actions;
+export const { setCourses, setFilter, setSearchQuery, enrollCourse, setEnrolledCourses, loadEnrolledCourses, markCourseCompleted } = coursesSlice.actions;
 
 export default coursesSlice.reducer;

@@ -1,8 +1,33 @@
-# React + Vite
+# Course Management Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This web application is designed to showcase a comprehensive list of courses, provide detailed information about each course, and offer a personalized student dashboard for managing enrolled courses. The application is built using React.js to ensure a dynamic and responsive user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Features
+
+##Course Listing Page:
+
+- [1.Displays a list of available courses with brief descriptions, images, and key details.]
+- [2.Includes filtering and sorting options to help users find courses that match their interests.]
+
+##Course Details Page:
+
+-[1.Provides detailed information about a specific course, including course content, instructor details, schedule, and enrollment options.]
+
+##Student Dashboard:
+
+-[1.Allows logged-in students to view and manage their enrolled courses.] -[2.Displays a list of enrolled courses with options to mark courses as completed.]
+
+### Installation
+
+Steps to install and set up your project:
+
+git clone https://github.com/gourav8186/coursehub.git
+
+cd coursehub
+npm install
+
+## Usage
+
+npm run dev

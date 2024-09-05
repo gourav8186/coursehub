@@ -2,6 +2,7 @@ import thumbnail from "../assets/thumbnails/images.png";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+
 import Skeleton from "./Skeleton";
 
 const CourseCard = () => {
